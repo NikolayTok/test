@@ -1,0 +1,43 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.boombock {
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    justify-content: center;
+
+    &:nth-child(1){
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+    &:nth-child(2){
+        grid-row: span 2;
+    }
+    &:nth-child(3){
+        grid-row-end: 5;
+    }
+    &:nth-child(5){
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+}
+.inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    transition: all 0.5s;
+}
+
+
+
+
+
+
+
+
+@import 'media';
